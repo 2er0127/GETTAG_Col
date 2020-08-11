@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="Seona Lee &lt;1009suna@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Seona Lee &lt;1009suna@gmail.com&gt;"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/princesssuna/GETTAG_Project.git"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="/Users/iseon-a/eclipse-workspace/TestProject/.git">
+			<item value="empty"/>
+		</list>
+		<list key="/Users/iseon-a/eclipse-workspace/GetTag-ws/.git">
+			<item value="empty"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="187"/>
+		<item key="DIALOG_Y_ORIGIN" value="92"/>
+		<item key="DIALOG_WIDTH" value="650"/>
+		<item key="DIALOG_HEIGHT" value="439"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.fetch.FetchResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="212"/>
+		<item key="DIALOG_Y_ORIGIN" value="92"/>
+		<item key="DIALOG_WIDTH" value="600"/>
+		<item key="DIALOG_HEIGHT" value="439"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.dialogs.MergeTargetSelectionDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="216"/>
+		<item key="DIALOG_Y_ORIGIN" value="-43"/>
+		<item key="DIALOG_WIDTH" value="593"/>
+		<item key="DIALOG_HEIGHT" value="679"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.merge.MergeResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="326"/>
+		<item key="DIALOG_Y_ORIGIN" value="271"/>
+		<item key="DIALOG_WIDTH" value="373"/>
+		<item key="DIALOG_HEIGHT" value="170"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

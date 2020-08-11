@@ -1,0 +1,5 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Merge remote-tracking branch &apos;origin/master&apos;&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;.gitignore&\#x0A;&\#x09;.settings/.jsdtscope&\#x0A;&\#x09;.settings/org.eclipse.jdt.core.prefs&\#x0A;&\#x09;.settings/org.eclipse.wst.common.component&\#x0A;&\#x09;.settings/org.eclipse.wst.common.project.facet.core.xml&\#x0A;</message>\n<message>init commit</message>\n<message>test init</message>\n<message>Merge remote-tracking branch &apos;origin/master&apos;&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;.gitignore&\#x0A;</message>\n</messages>
+eclipse.preferences.version=1
+repositories_view_filters=<?xml version\="1.0" encoding\="UTF-8"?>\n<FilterCache/>
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300
