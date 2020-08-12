@@ -1,5 +1,5 @@
 package com.gettag.controller;
 
-public class mainController {
+public class listController {
 
 }
