@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+<header>
+<a href="#메인뷰" class="headLogo">#TODO 로고 삽입</a>
+</header>
 <footer><%@ include file="/WEB-INF/views/include/footer.jsp" %></footer>
 </body>
 </html>

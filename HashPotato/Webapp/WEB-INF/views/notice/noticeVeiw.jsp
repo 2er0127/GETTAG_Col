@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="/WEB-INF/veiws/assets/css/noticeStyle.css">
 </head>
 <body>
-	<header><!--jsp:include page=헤더 링크--></header>
+	<header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
         
 	<nav><!--jsp 네비게이션 링크--></nav>
         
