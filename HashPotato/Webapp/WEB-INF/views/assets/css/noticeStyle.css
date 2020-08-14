@@ -1,0 +1,7 @@
+#notice {position:relative; left:10%}
+#listNo {width:15%}
+#listName {width:50%}
+#listWriter {width: 15%}
+#listDate {width: 25%}
+.notice_tbl caption {display: none}
+.notice_tbl {border-top: 2px solid black; border-bottom: 1px solid black;margin: auto; width:80%;}
