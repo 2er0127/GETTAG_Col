@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<footer><%@ include file="/WEB-INF/views/include/footer.jsp" %></footer>
 </body>
 </html>

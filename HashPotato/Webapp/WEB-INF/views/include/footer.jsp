@@ -7,10 +7,10 @@
 	<span class="bold_info">Team GETTAG</span>
 	<div class="info">
 	삼육대학교 컴공 2학년 세 명이 으쌰으쌰 맨땅에 헤딩<br/>
-	문의 이메일 주소 | #TO WRITE
+	문의 이메일 주소 | #TO WRITE<br>
 	Git 주소 | #TO WRITE
 	</div>
 </div>
 <span class="logo">#TODO 로고 삽입</span>
-<span id="copyright">Copyright 2018 Team GETTAG All right Reserved.</span>
+<p id="copyright">Copyright 2018 Team GETTAG All right Reserved.</p>
 </div>
