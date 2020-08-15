@@ -15,7 +15,7 @@
         
 	<article>
 		<h2 id="notice">공지사항</h2>
-		<table class="notice_tbl">
+		<table class="notice-tbl">
 			<caption>글번호, 제목, 작성자, 등록일로 이루어진 공지사항 테이블입니다.</caption>
                 
 			<thead>
