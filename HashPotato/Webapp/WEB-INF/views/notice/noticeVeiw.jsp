@@ -6,7 +6,7 @@
 <head>
 	<title>#공지사항</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="/WEB-INF/veiws/assets/css/noticeStyle.css">
+	<link rel="stylesheet" type="text/css" href="/WEB-INF/assets/css/noticeStyle.css">
 </head>
 <body>
 	<header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
