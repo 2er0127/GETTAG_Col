@@ -1,5 +1,7 @@
 # GETTAG_Col
 인디 게임 추천 웹페이지 프로젝트
+HashPotato 폴더 입니다.
+
  
 Leader : 이선아
 
