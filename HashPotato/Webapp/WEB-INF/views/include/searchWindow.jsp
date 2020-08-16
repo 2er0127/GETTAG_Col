@@ -8,8 +8,8 @@
 </head>
 <body>
 <h2>찾는 게임을 선택해주세요</h2>
-<form name="gameSelect" action="#" method="get">
-<input type="radio"/>
+<form class="gameSelect" name="gameSelect" action="#" method="get">
+<input type="radio" name=""/>
 </form>
 </body>
 </html>

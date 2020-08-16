@@ -40,9 +40,9 @@
 			</tbody>
 		</table>
 		<br>
-		<div class="superWrite_wrap">
+		<div class="superWrite-wrap">
 			<c:if test="${ user.type eq 'S' }">
-				<input type="button" value="관리자 글쓰기" onclick="" class="superWrite_wrap"/>
+				<input type="button" value="관리자 글쓰기" onclick="함수명()" class="superWrite_wrap"/>
 			</c:if>
 		</div>
 	</article>
