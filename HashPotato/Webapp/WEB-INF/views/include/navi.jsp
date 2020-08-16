@@ -9,6 +9,13 @@
 	 로그인 후: 내정보/찜목록 | 로그아웃
 	 관리자(슈퍼유저): 내정보/찜목록 | 글쓰기 | 로그아웃
 -->
+<!-- 나중에 css/naviStyle.css로 변경  -->
+<head>
+<style type="text/css">
+.nav-myinfo{text-align:right; list-style:none;}
+.nav-login{text-align:right; list-style:none;}
+</style>
+</head>
 
 <div class="nav-wrap">
 	<nav class="site-nav">
