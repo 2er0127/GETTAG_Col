@@ -7,7 +7,6 @@
 <head>
 <meta charset="UTF-8">
 <title>#메인 페이지</title>
-<!-- <script type="text/javascript"><%@ include file="/WEB-INF/assets/js/popSearch.js" %></script> -->
 <script type="text/javascript" src="/WEB-INF/assets/js/popSearch.js"></script>
 
 

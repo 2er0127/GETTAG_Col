@@ -7,6 +7,8 @@
 	<title>#공지사항</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/WEB-INF/assets/css/noticeStyle.css">
+	<script type="text/javascript">
+	</script>
 </head>
 <body>
 	<header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
@@ -19,17 +21,30 @@
 			<caption>글번호, 제목, 작성자, 등록일로 이루어진 공지사항 테이블입니다.</caption>
                 
 			<thead>
-				<tr>
-					<th id="listNo">글 번호</th>
-					<th id="listName">제목</th>
-					<th id="listWriter">작성자</th>
-					<th id="listDate">등록일</th>
+				<tr class="noticeHead">
+					<th class="listNo">글 번호</th>
+					<th class="listTitle">제목</th>
+					<th class="listWriter">작성자</th>
+					<th class="listDate">등록일</th>
 				</tr>
 			</thead>
 			<tbody>
-				
+				<c:forEach var=gBoard items="${ noticeList }">
+				<tr class="noticeBody">
+					<td class="listNo">${ gBoard.no }</td>
+					<td class="listTitle"><a href='"#주소값" + gBoard.no'>${ gBoard.title }</a></td>
+					<td class="listWriter">${ gBoard.writer }</td>
+					<td class="listDate">${ gBoard.reg_date }</td>
+				</tr>
+				</c:forEach>
 			</tbody>
 		</table>
+		<br>
+		<div class="superWrite_wrap">
+			<c:if test="${ user.type eq 'S' }">
+				<input type="button" value="관리자 글쓰기" onclick="" class="superWrite_wrap"/>
+			</c:if>
+		</div>
 	</article>
 	<footer><%@ include file="/WEB-INF/views/include/footer.jsp" %></footer>
 </body>
