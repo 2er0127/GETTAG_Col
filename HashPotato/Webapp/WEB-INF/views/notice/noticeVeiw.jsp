@@ -13,7 +13,7 @@
 <body>
 	<header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
         
-	<nav><!--jsp 네비게이션 링크--></nav>
+	<nav><%@ include file="/WEB-INF/views/include/navi.jsp" %></nav>
         
 	<article>
 		<h2 id="notice">공지사항</h2>
