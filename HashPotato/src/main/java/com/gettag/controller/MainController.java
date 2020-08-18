@@ -4,12 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/Main")
 public class mainController {
 	
-	@RequestMapping("mainView")
+	@RequestMapping("/main")
 	public String main() {
-		return "mainView";
+		return "/WEB-INF/views/main/mainView.jsp";
 	}
 
 }
