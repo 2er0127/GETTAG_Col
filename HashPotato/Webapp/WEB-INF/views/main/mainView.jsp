@@ -8,8 +8,7 @@
 <meta charset="UTF-8">
 <title>#메인 페이지</title>
 <script type="text/javascript" src="/WEB-INF/assets/js/popSearch.js"></script>
-<!--  <script type="text/javascript" src="${pageContext.request.contextPath}/js/popSearch.js"></script>-->
-<!--  <script src="<c:url value="/assets/js/popSearch.js" />"></script> -->
+
 <style type="text/css">
 #main-search{width:300px; height:100px;}
 </style>
@@ -21,6 +20,7 @@
 <a href="mainVeiw.jsp" class="main-logo">#TODO 로고 삽입</a>
 <%@ include file="/WEB-INF/views/include/navi.jsp" %>
 </header>
+
 <article class="main-search-wrap" style="text-align:center">
 <p>재미있게 즐겼던 게임과 유사한 게임을 찾고 싶으신가요? 어쩌구저쩌구 해시포테토 웹페이지 설명</p>
 <!-- submit 시, 게임 선택을 위한 창 생성 -->
