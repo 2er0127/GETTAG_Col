@@ -28,13 +28,22 @@
 			
 			<c:choose>
 				<c:when test="${empty user}">	<!-- 로그인 전 -->
-					<li class="nav-login"><a href="#로그인사이트">로그인</a></li>
+					<li class="nav-login"><a href="/WEB-INF/views/login/loginView.jsp">로그인</a></li>
 				</c:when>
 				
 				<c:otherwise>	<!-- 로그인 후 -->
-					<li class="nav-logout"><a href="#로그아웃처리">로그아웃</a></li>
+					<li class="nav-logout"><a href="#로그아웃처리" onclick="signOut();">로그아웃</a></li>
 				</c:otherwise>
 			</c:choose>
 		</ul>
 	</nav>
 </div>
+
+<script>
+  			function signOut() {
+    			var auth2 = gapi.auth2.getAuthInstance();
+    			auth2.signOut().then(function () {
+      			console.log('User signed out.');
+    			});
+  			}
+</script>

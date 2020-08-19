@@ -15,7 +15,7 @@
     <body>
         <h2>다음 계정으로 로그인</h2>
         <div id="my-signin2"></div>
-        <a href="#" onclick="signOut();">로그아웃</a>
+        
         <script>
     		function onSuccess(googleUser) {
       			console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
@@ -37,14 +37,7 @@
 
   		</script>
 
-		<script>
-  			function signOut() {
-    			var auth2 = gapi.auth2.getAuthInstance();
-    			auth2.signOut().then(function () {
-      			console.log('User signed out.');
-    			});
-  			}
-</script>
+		
   		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
     </body>
 </html>
