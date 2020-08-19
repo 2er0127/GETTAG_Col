@@ -15,7 +15,7 @@
 	<div class="gSelect-list">
 		<label for="">
 			<img src="">
-			${  }
+			${ gList. }
 			<input type="radio" name="">
 		</label>
 	</div>

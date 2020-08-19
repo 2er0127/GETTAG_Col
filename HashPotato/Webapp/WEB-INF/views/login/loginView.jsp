@@ -13,12 +13,22 @@
     </head>
     
     <body>
+    <header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
+    
+    <article>   
         <h2>다음 계정으로 로그인</h2>
-        <div id="my-signin2"></div>
+        <div id="my-signin2" data-onsuccess="onSignIn"></div>
         
         <script>
-    		function onSuccess(googleUser) {
-      			console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        //onSignIn 함수는 데이터 받는것 확인을 위해 넣어둔 것일 뿐 이거 콘솔에 보이면 안됨!!
+    		function onSignIn(googleUser) { 
+    			var profile = googleUser.getBasicProfile();
+    		    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+    		    console.log('Full Name: ' + profile.getName());
+    		    console.log('Given Name: ' + profile.getGivenName());
+   		        console.log('Family Name: ' + profile.getFamilyName());
+   		        console.log("Image URL: " + profile.getImageUrl());
+  		        console.log("Email: " + profile.getEmail());
     		}
     		function onFailure(error) {
       			console.log(error);
@@ -29,8 +39,8 @@
         			'width': 240,
         			'height': 50,
         			'longtitle': true,
-        			'theme': 'light',
-        			'onsuccess': onSuccess,
+        			'theme': 'Dark',
+        			'onsuccess': onSignIn,
         			'onfailure': onFailure
       			});
     		}
@@ -39,5 +49,8 @@
 
 		
   		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    </article>	
+    
+    <footer><%@ include file="/WEB-INF/views/include/footer.jsp" %></footer>
     </body>
 </html>

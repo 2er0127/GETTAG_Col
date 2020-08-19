@@ -7,8 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>#메인 페이지</title>
-<script type="text/javascript" src="/WEB-INF/assets/js/popSearch.js"></script>
-
+<%-- <script type="text/javascript" src="<c:url value="/Webapp/resources/js/popSearch.js"/>"></script> --%>
+<script src="${pageContext.request.contextPath}/resources/js/popSearch.js"></script>
 <style type="text/css">
 #main-search{width:300px; height:100px;}
 </style>
