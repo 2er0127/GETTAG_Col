@@ -13,14 +13,15 @@
 <form class="gameSelect" name="gameSelect" action="#" method="get">
 <c:forEach var=gList items="${ gSelectList }">
 	<div class="gSelect-list">
-		<label for="">
-			<img src="">
-			${ gList. }
-			<input type="radio" name="">
-		</label>
+		<label for="${ gList.index }">
+			<img src="${ gList.img }"><br>
+			${ gList.name }
+		</label>	
+			<input type="radio" name="select ${ gList.index }" id="${ gList.index }">
+		
 	</div>
 </c:forEach>
-<input type="submit" name="" value="검색">
+<input type="submit" name="gSelectSubmit" value="검색">
 </form>
 </div>
 </body>
