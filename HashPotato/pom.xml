@@ -36,6 +36,11 @@
   		<artifactId>spring-context</artifactId>
   		<version>4.3.2.RELEASE</version>
   	</dependency>
+<!--<dependency>
+  		<groupId>org.projectlombok</groupId>
+  		<artifactId>lombok</artifactId>
+  		<optional>true</optional>
+  	</dependency>-->
 </dependencies>
 
   <build>
