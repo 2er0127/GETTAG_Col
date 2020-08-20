@@ -4,18 +4,15 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
+
+<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/naviStyle.css">
+
 <!-- 네비게이션 바 메뉴 구성
 	 로그인 전: 내정보/찜목록(들어가려면 로그인 해야함) | 로그인
 	 로그인 후: 내정보/찜목록 | 로그아웃
 	 관리자(슈퍼유저): 내정보/찜목록 | 글쓰기 | 로그아웃
 -->
-<!-- 나중에 css/naviStyle.css로 변경  -->
-<head>
-<style type="text/css">
-.nav-myinfo{text-align:right; list-style:none;}
-.nav-login{text-align:right; list-style:none;}
-</style>
-</head>
+
 
 <div class="nav-wrap">
 	<nav class="site-nav">

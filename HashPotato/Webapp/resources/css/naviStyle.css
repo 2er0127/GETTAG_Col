@@ -1,3 +1,26 @@
-@charset "UTF-8";
-.nav-myinfo{text-align:right; list-style:none;}
-.nav-login{text-align:right; list-style:none;}
+.nav-wrap{
+	position:absolute;
+	top: 0px;
+	right: 10px;
+	width=200px;
+	height=100px;
+}
+
+.nav-li{
+	list-style:none;	
+}
+
+.nav-li li{
+	float:left;
+	margin-left: 10px;
+	font-size: 10pt;
+}
+
+.nav-li li a:link{
+	color: #804000;
+	text-decoration: none;
+}
+
+.nav-li li a:visited{
+	color: #804000;
+}

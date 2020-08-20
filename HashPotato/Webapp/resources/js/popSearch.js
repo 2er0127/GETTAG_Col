@@ -1,6 +1,6 @@
 function open_select(){
-	var url="https://www.naver.com";
+	var url="https://www.google.com/";
 	var winName="HASHPOTATO-게임 선택";
-	var winOption = "width=450, height=500, top=100, left=100";
+	var winOption = "width=450, height=550, top=10, left=10";
 	window.open(url,winName,winOption);
 }
