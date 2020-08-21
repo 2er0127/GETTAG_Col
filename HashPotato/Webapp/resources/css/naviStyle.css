@@ -1,13 +1,10 @@
 .nav-wrap{
-	position:absolute;
-	top: 0px;
-	right: 10px;
 	width=200px;
 	height=100px;
 }
 
 .nav-li{
-	list-style:none;	
+	list-style:none;
 }
 
 .nav-li li{

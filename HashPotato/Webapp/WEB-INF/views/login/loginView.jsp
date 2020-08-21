@@ -14,7 +14,7 @@
     
     <body>
     <header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
-    
+    <%@ include file="/WEB-INF/views/include/navi.jsp" %>
     <article>   
         <h2>다음 계정으로 로그인</h2>
         <div id="my-signin2" data-onsuccess="onSignIn"></div>
