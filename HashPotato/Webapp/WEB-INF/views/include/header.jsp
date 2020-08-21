@@ -1,8 +1,8 @@
 <!-- (mainVeiw제외 모든 페이지에 들어가는 header 헤더. 로고, 검색창 들어감 -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/headerStyle.css">    
-
+<div class="header">    
 <div class="header-wrap">
 <!-- 해시포테토 로고. 누르면 mainVeiw로 돌아간다. -->
 <a href="#메인뷰" class="headLogo">#TODO 로고 삽입</a>
@@ -13,5 +13,6 @@
 	<input type="search" class="search-box" name="search-box" placeholder="찾고 싶은 게임 이름을 입력하세요.">
 	<input type="submit" class="gsubmit-button" value="검색">
 </form>
+</div>
 </div>
 </div>

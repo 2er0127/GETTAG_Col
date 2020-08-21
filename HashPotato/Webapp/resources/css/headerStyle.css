@@ -1,17 +1,18 @@
-.header.wrap{
-	width:750px;
-	height:50px;
-	border: 1px solid black;
-}
-
-.search-wrap{
+.header-wrap{
 	position: absolute;
 	top: 30px;
-	left: 250px;
-	width:500px;
+	width:900px;
+	height:50px;
+}
+.headLogo{
+
+}
+.search-wrap{
+	width:550px;
 	height:50px;
 	border: 1px solid #FFBF00;
 	background-color: #FFFFFF;
+	float: right;
 }
 
 .search-box{
