@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.gettag.service.HandlerMapping;
 
 
-@WebServlet("*.com")
+/*@WebServlet("*.com")*/
 public class FrontController extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
