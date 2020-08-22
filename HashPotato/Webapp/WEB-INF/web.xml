@@ -20,6 +20,6 @@
   	</servlet-mapping>
  
 	<welcome-file-list>
-		<welcome-file>/WEB-INF/views/login/loginView.jsp</welcome-file>
+		<welcome-file>/WEB-INF/views/main/mainView.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>

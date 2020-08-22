@@ -1,13 +1,15 @@
-.nav-wrap{
-	position:absolute;
+.nav{
+	position: absolute;
 	top: 0px;
-	right: 10px;
-	width=200px;
-	height=100px;
+	left: 900px;
+	width: 300px;
+	min-height: 12px;
 }
+.nav-wrap{
 
+}
 .nav-li{
-	list-style:none;	
+	list-style:none;
 }
 
 .nav-li li{
