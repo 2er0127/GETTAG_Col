@@ -11,8 +11,8 @@
 <div class="search-wrap">
 <form name="game-search"action="#" method="get" >
 	<input type="search" class="search-box" name="search-box" placeholder="찾고 싶은 게임 이름을 입력하세요.">
-	<input type="submit" class="gsubmit-button" value="검색">
+	<input type="submit" class="gsubmit-button" value="검색" style="cursor:pointer">
 </form>
 </div>
 </div>
-</div>
+</div> 

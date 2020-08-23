@@ -6,14 +6,18 @@
 <head>
 	<title>#공지사항</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="/WEB-INF/assets/css/noticeStyle.css">
+	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/noticeStyle.css">
+	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/headerStyle.css">
+	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/naviStyle.css">
 </head>
 <body>
 	<header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
         
 	<nav><%@ include file="/WEB-INF/views/include/navi.jsp" %></nav>
-        
+    
 	<article>
+	<hr>
+	<div class="notice-wrap">
 		<h2 id="notice">공지사항</h2>
 		<table class="notice-tbl">
 			<caption>글번호, 제목, 작성자, 등록일로 이루어진 공지사항 테이블입니다.</caption>
@@ -26,7 +30,7 @@
 					<th class="listDate">등록일</th>
 				</tr>
 			</thead>
-			<tbody>
+			<%-- <tbody>
 				<c:forEach var=gBoard items="${ noticeList }">
 				<tr class="noticeBody">
 					<td class="listNo">${ gBoard.no }</td>
@@ -35,14 +39,15 @@
 					<td class="listDate">${ gBoard.reg_date }</td>
 				</tr>
 				</c:forEach>
-			</tbody>
+			</tbody> --%>
 		</table>
 		<br>
-		<div class="superWrite-wrap">
+<%-- 		<div class="superWrite-wrap">
 			<c:if test="${ user.type eq 'S' }">
 				<input type="button" value="관리자 글쓰기" onclick="함수명()" class="superWrite_wrap"/>
 			</c:if>
-		</div>
+		</div> --%>
+	</div>
 	</article>
 	
 	<footer><%@ include file="/WEB-INF/views/include/footer.jsp" %></footer>

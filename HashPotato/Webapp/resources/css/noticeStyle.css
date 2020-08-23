@@ -1,5 +1,18 @@
-@charset "UTF-8";
-#notice {position:relative; left:10%}
+hr {
+	border: solid 2px #FFBF00; 
+}
+article {
+	margin-top: 110px;
+}
+.notice-wrap{
+	position:relative;
+	width:100%;
+	margin:50px;
+	margin-left:50px;
+	
+}
+#notice {
+	left:10%}
 #listNo {width:15%}
 #listName {width:50%}
 #listWriter {width: 15%}

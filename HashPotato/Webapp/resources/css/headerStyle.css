@@ -10,7 +10,7 @@
 .search-wrap{
 	width:550px;
 	height:50px;
-	border: 1px solid #FFBF00;
+	border: 1.5px solid #FFBF00;
 	background-color: #FFFFFF;
 	float: right;
 }
@@ -34,5 +34,5 @@
 	border:0;
 	background-color: #FFBF00;
 	font-size: 12pt;
-	
+
 }
