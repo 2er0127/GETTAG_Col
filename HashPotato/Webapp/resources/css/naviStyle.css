@@ -1,21 +1,26 @@
 .nav{
-	position: absolute;
+	position: fixed;
 	top: 0px;
-	left: 900px;
-	width: 300px;
+	right: 0px;
 	min-height: 12px;
+	background-color: #FFBF00;
 }
 .nav-wrap{
+	height:100%;
 
 }
 .nav-li{
 	list-style:none;
+	margin:0px;
+	padding:10px;
+	padding-right:20px;
 }
 
 .nav-li li{
 	float:left;
 	margin-left: 10px;
 	font-size: 10pt;
+	padding-bottom:10px;
 }
 
 .nav-li li a:link{
