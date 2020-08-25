@@ -31,7 +31,7 @@
 	</p>
 	
 	<!-- submit 시, 게임 선택을 위한 창 생성 -->
-	<form class="game-search" name="game-search" action="http://localhost:8080/HashPotato/gSearch" method="get">
+	<form class="game-search" name="game-search" action="http://localhost:8080/HashPotato/gSearchView" method="get">
 		<input id="main-search" type="search" name="search-box" placeholder="게임 이름을 입력하세요!"><br>
 		<input id="main-submit" type="submit" value="검색" onClick="open_select()">
 	</form>

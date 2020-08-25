@@ -16,7 +16,7 @@ public class FrontController {
 	@RequestMapping(value="/gSearch", method=RequestMethod.POST) 
 	public ModelAndView gSearch(ModelAndView mv) {
 		
-		mv.setViewName("main/gSearch");
+		mv.setViewName("gSearch/gSearchView");
 		return mv; // POST gSearch   
 	}
 }
