@@ -3,17 +3,23 @@ package com.gettag.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class FrontController {
 	@RequestMapping(value="/", method=RequestMethod.GET) // value값 다시 지정 
-	public String main() {
+	public ModelAndView main(ModelAndView mv) {
 		
-		return ""; // return값 지정
+		mv.setViewName("main/mainView");
+		return mv; // GET mainView
+	}
+	@RequestMapping(value="/gSearch", method=RequestMethod.POST) 
+	public ModelAndView gSearch(ModelAndView mv) {
+		
+		mv.setViewName("main/gSearch");
+		return mv; // POST gSearch   
 	}
 }
-// main 메소드 안에 들어갈 것
-// 1.
-// 2.
+// mainView -> gSearch
 
 	
