@@ -18,7 +18,7 @@
 	<nav><%@ include file="/WEB-INF/views/include/navi.jsp" %></nav>
     
 	<article>
-	<hr>
+	<hr class="bold-line">
 	<div class="page-wrap">
 	<div class="notice-wrap">
 		<h2 id="notice">공지사항</h2>

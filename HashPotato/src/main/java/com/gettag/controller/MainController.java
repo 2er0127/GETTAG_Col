@@ -12,4 +12,8 @@ public class MainController {
 	}
 
 }
+<<<<<<< HEAD
 // 메인 홈페이지 컨트롤러 
+=======
+// 메인 홈페이지 컨트롤러
+>>>>>>> a0ec811c01167b693de6ab4febc85b92843b8b62
