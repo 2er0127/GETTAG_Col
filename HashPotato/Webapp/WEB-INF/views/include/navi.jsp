@@ -6,9 +6,9 @@
 
 <div class="nav">
 <!-- 네비게이션 바 메뉴 구성
-	 로그인 전: 로그인 | 내정보/찜목록(들어가려면 로그인 해야함)
-	 로그인 후: 로그아웃 | 내정보/찜목록 
-	 관리자(슈퍼유저): 로그아웃 | 내정보/찜목록 | 글쓰기
+	 로그인 전: 로그인 | 마이페이지(들어가려면 로그인 해야함)
+	 로그인 후: 로그아웃 | 마이페이지 
+	 관리자(슈퍼유저): 로그아웃 | 마이페이지 | 글쓰기
 -->
 <div class="nav-wrap">
 	<ul class="nav-li">
@@ -22,7 +22,7 @@
 			</c:otherwise>
 		</c:choose>
 		
-		<li class="nav-myinfo"><a href="#내정보/찜목록 페이지">내정보/찜목록</a></li>
+		<li class="nav-myinfo"><a href="#마이페이지">마이페이지</a></li>
 		<!-- 현재 세션 영역에 존재하는 user 타입이 'S'(슈퍼유저) 라면 -->
 		<c:if test="${ user.type eq 'S' }"> 
 			<li class="nav-notice-write"><a href="#글쓰기사이트">글쓰기</a></li>

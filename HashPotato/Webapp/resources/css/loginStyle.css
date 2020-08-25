@@ -1,15 +1,5 @@
-article{
-	margin-top: 130px;
-}
-
-hr {
-	border: solid 2px #FFBF00;
-	background-color: #FFBF00;
-}
 .sign-box{
-	position: relative;
 	text-align: center;
-	width: 100%;
 	height: 500px;
 	padding-top: 50px;
 }

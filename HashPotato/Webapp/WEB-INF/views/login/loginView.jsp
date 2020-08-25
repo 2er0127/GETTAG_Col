@@ -9,8 +9,10 @@
         <script src="https://apis.google.com/js/platform.js" async defer></script>
 		
 		<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/loginStyle.css">
+		<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/allStyle.css">
 		<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/headerStyle.css">
 		<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/naviStyle.css">    
+    	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/footerStyle.css">
     
     </head>
     
@@ -19,6 +21,7 @@
     <nav><%@ include file="/WEB-INF/views/include/navi.jsp" %></nav>
     <article>
     <hr>
+    <div class="page-wrap">
     <div class="sign-box">  
         <h2>다음 계정으로 로그인</h2>
         <div class="sign-button-box">
@@ -26,7 +29,13 @@
         <div id="my-signin2" data-onsuccess="onSignIn"></div>
         </div>
         </div>
-        <script>
+    </div>
+    </div>
+    </article>	
+    
+    <footer><%@ include file="/WEB-INF/views/include/footer.jsp" %></footer>
+    
+    <script>
         //onSignIn 함수는 데이터 받는것 확인을 위해 넣어둔 것일 뿐 이거 콘솔에 보이면 안됨!!
     		function onSignIn(googleUser) { 
     			var profile = googleUser.getBasicProfile();
@@ -54,9 +63,6 @@
 
 		
   		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-    </div>
-    </article>	
     
-    <footer><%@ include file="/WEB-INF/views/include/footer.jsp" %></footer>
     </body>
 </html>

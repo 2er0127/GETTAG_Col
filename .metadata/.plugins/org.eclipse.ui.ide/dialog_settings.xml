@@ -5,4 +5,27 @@
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 		</list>
 	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/iseon-a/Downloads/spring-hello"/>
+			<item value="/Users/iseon-a/Downloads/spring-container"/>
+			<item value="/Users/iseon-a/Downloads/spring-aop"/>
+			<item value="/Users/iseon-a/Downloads/jchat-python"/>
+			<item value="/Users/iseon-a/Downloads/mybatis1"/>
+			<item value="/Users/iseon-a/Downloads/jblog"/>
+			<item value="/Users/iseon-a/Downloads/jblog-spring"/>
+			<item value="/Users/iseon-a/Downloads/jblog-spring1"/>
+			<item value="/Users/iseon-a/Downloads/spring-mysite"/>
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="546"/>
+		<item key="DIALOG_HEIGHT" value="363"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
 </section>
