@@ -1,9 +1,10 @@
 article{
-	margin-top: 110px;
+	margin-top: 130px;
 }
 
 hr {
-	border: solid 2px #FFBF00; 
+	border: solid 2px #FFBF00;
+	background-color: #FFBF00;
 }
 .sign-box{
 	position: relative;

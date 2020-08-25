@@ -1,18 +1,30 @@
-.header-wrap{
-	position: absolute;
-	top: 30px;
-	width:900px;
-	height:50px;
-}
-.headLogo{
+.header{
 
 }
+.header-wrap{
+	position: absolute;
+	top: 50px;
+	width:100%;
+	min-width: 800px;
+
+}
+.headLogo{
+	float: left;
+	width:180px;
+	height:50px;
+	padding-left:100px;
+}
 .search-wrap{
-	width:550px;
+	position: relative;
+	right: 10px;
+	width:60%;
+	min-width: 100px;
+	max-width:700px;
 	height:50px;
 	border: 1.5px solid #FFBF00;
 	background-color: #FFFFFF;
-	float: right;
+	margin-left:20px;
+	float: left;
 }
 
 .search-box{
@@ -27,7 +39,7 @@
 }
 
 .gsubmit-button{
-	width: 15%;
+	width: 13%;
 	height: 50px;
 	outline:none;
 	float: right;

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>#공지사항</title>
+	<title>공지사항 | #POTATO</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/noticeStyle.css">
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/headerStyle.css">
@@ -30,19 +30,19 @@
 					<th class="listDate">등록일</th>
 				</tr>
 			</thead>
-			<%-- <tbody>
-				<c:forEach var=gBoard items="${ noticeList }">
+			<tbody>
+<%-- 			<c:forEach var=gBoard items="${ noticeList }">
 				<tr class="noticeBody">
 					<td class="listNo">${ gBoard.no }</td>
 					<td class="listTitle"><a href='"#주소값" + gBoard.no'>${ gBoard.title }</a></td>
 					<td class="listWriter">${ gBoard.writer }</td>
 					<td class="listDate">${ gBoard.reg_date }</td>
 				</tr>
-				</c:forEach>
-			</tbody> --%>
+				</c:forEach> --%>
+			</tbody>
 		</table>
 		<br>
-<%-- 		<div class="superWrite-wrap">
+<%-- 	<div class="superWrite-wrap">
 			<c:if test="${ user.type eq 'S' }">
 				<input type="button" value="관리자 글쓰기" onclick="함수명()" class="superWrite_wrap"/>
 			</c:if>
