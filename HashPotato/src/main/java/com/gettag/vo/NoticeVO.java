@@ -38,3 +38,4 @@ public class NoticeVO {
 		this.reg_date = reg_date;
 	}
 }
+ 
