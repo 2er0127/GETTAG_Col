@@ -13,7 +13,7 @@ public class FrontController {
 		mv.setViewName("main/mainView");
 		return mv; // GET mainView
 	}
-	@RequestMapping(value="/gSearch", method=RequestMethod.POST) 
+	@RequestMapping(value="/gSearch", method=RequestMethod.POST) // gSearch에 action값으로 설정해주기!
 	public ModelAndView gSearch(ModelAndView mv) {
 		
 		mv.setViewName("gSearch/gSearchView");
