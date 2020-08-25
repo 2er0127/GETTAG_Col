@@ -1,46 +1,23 @@
 package com.gettag.controller;
 
-import java.io.IOException;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
-
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import com.gettag.service.HandlerMapping;
-
-
-/*@WebServlet("*.com")*/
-public class FrontController extends HttpServlet{
-
-	private static final long serialVersionUID = 1L;
-	
-	private HandlerMapping mappings=null;
-
-	@Override
-	public void service(HttpServletRequest request
-					  , HttpServletResponse response
-					  ) throws ServletException, IOException {
-//		try {
-//			String uri = request.getRequestURI();		
-//			String context = request.getContextPath();	
-//			uri = uri.substring(context.length());		
-			
-//			Controller controller = mappings.getController(uri);
-	
-//			String callPage = controller.handleRequest(request, response);
-			
-//			RequestDispatcher dispatcher
-//				= request.getRequestDispatcher(callPage);
-//			dispatcher.forward(request, response);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			throw new ServletException(e);
-//		}
+@Controller
+public class FrontController {
+	@RequestMapping(value="/", method=RequestMethod.GET) // value값 다시 지정 
+	public ModelAndView main(ModelAndView mv) {
+		
+		mv.setViewName("main/mainView");
+		return mv; // GET mainView
+	}
+	@RequestMapping(value="/gSearch", method=RequestMethod.POST) // gSearch에 action값으로 설정해주기!
+	public ModelAndView gSearch(ModelAndView mv) {
+		
+		mv.setViewName("gSearch/gSearchView");
+		return mv; // POST gSearch   
 	}
 }
- 
-	
+// mainView -> gSearch

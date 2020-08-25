@@ -13,10 +13,14 @@
   			</param-value>
   		</init-param>
   	</servlet>
-  
+  	
+  	<servlet>
+  		<servlet-name>mainView-jsp</servlet-name>
+  		<jsp-file>/mainView.jsp</jsp-file>
+  	</servlet>
   	<servlet-mapping>
-  		<servlet-name>dispatcher</servlet-name>
-  		<url-pattern>*.com</url-pattern>
+  		<servlet-name>mainView-jsp</servlet-name>
+  		<url-pattern>/mainView</url-pattern>
   	</servlet-mapping>
  
 	<welcome-file-list>
@@ -24,4 +28,4 @@
 		<welcome-file>/WEB-INF/views/main/mainView.jsp</welcome-file>
 
 	</welcome-file-list>
-</web-app> 
+</web-app>
