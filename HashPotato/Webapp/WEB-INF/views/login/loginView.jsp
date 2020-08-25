@@ -20,7 +20,7 @@
     <header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
     <nav><%@ include file="/WEB-INF/views/include/navi.jsp" %></nav>
     <article>
-    <hr>
+    <hr class="line">
     <div class="page-wrap">
     <div class="sign-box">  
         <h2>다음 계정으로 로그인</h2>

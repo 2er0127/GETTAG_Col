@@ -20,7 +20,7 @@
 <header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
 <nav><%@ include file="/WEB-INF/views/include/navi.jsp" %></nav>
 <article>
-	<hr>
+	<hr class="bold-line">
 	<div class="page-wrap">
 	<div class="mypage-wrap">
 	

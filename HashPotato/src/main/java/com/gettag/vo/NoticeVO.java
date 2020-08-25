@@ -7,7 +7,7 @@ public class NoticeVO {
 	private String content;	//게시글 내용
 	private String reg_date;//게시글 작성일
 	
-	public int getNo() {
+	public int getNo() { 
 		return no;
 	}
 	public void setNo(int no) {
