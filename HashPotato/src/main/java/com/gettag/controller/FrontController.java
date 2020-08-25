@@ -20,10 +20,6 @@ public class FrontController {
 		return mv; // POST gSearch   
 	}
 }
-<<<<<<< HEAD
+
 // mainView -> gSearch
 
-	
-=======
-// mainView -> gSearch
->>>>>>> a0ec811c01167b693de6ab4febc85b92843b8b62
