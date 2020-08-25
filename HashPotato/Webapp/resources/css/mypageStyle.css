@@ -1,0 +1,26 @@
+.mypage-wrap{
+	margin-top:50px;
+	margin-bottom:100px;
+	margin-left:130px;
+	margin-right:150px;
+	min-width:400px;
+}
+
+.member-info-box{
+	width:100%;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:30px;
+	border: 1.5px solid #FFBF00;
+	border-radius: 10px;
+}
+.remember-list{
+	margin-top:30px;
+}
+.remember-list-box{
+	width:100%;
+	border: 1.5px solid #FFBF00;
+	border-radius: 10px;
+	padding-top:10px;
+	padding-bottom:10px;
+}

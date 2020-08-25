@@ -6,13 +6,14 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
-<title>#메인 페이지</title>
+	<meta charset="UTF-8">
+	<title>#POTATO</title>
 
-<script src="${pageContext.request.contextPath}/resources/js/popSearch.js"></script>
-<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/mainStyle.css">
-<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/headerStyle.css">
-<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/naviStyle.css">
+	<script src="${pageContext.request.contextPath}/resources/js/popSearch.js"></script>
+	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/mainStyle.css">
+	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/headerStyle.css">
+	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/naviStyle.css">
+	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/footerStyle.css">
 </head>
 
 <body>

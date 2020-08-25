@@ -1,4 +1,5 @@
 .nav{
+	z-index:3;
 	position: fixed;
 	top: 0px;
 	right: 0px;

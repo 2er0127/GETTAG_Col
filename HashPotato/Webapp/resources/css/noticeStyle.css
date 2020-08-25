@@ -1,20 +1,8 @@
-hr {
-	border: solid 2px #FFBF00;
-	background-color: #FFBF00;
-}
-article {
-	margin-top: 130px;
-}
 .notice-wrap{
-	position:relative;
-	left: 10%;
-	width:60%;
 	padding-top:50px;
 	padding-bottom:100px;
 	padding-left:130px;
 	padding-right:150px;
-	border: 1px solid;
-	
 }
 
 .listNo {

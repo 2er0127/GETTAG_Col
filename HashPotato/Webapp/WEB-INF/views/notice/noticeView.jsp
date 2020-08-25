@@ -7,8 +7,10 @@
 	<title>공지사항 | #POTATO</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/noticeStyle.css">
+	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/allStyle.css">
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/headerStyle.css">
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/naviStyle.css">
+	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/footerStyle.css">
 </head>
 <body>
 	<header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
@@ -17,6 +19,7 @@
     
 	<article>
 	<hr>
+	<div class="page-wrap">
 	<div class="notice-wrap">
 		<h2 id="notice">공지사항</h2>
 		<table class="notice-tbl">
@@ -47,6 +50,7 @@
 				<input type="button" value="관리자 글쓰기" onclick="함수명()" class="superWrite_wrap"/>
 			</c:if>
 		</div> --%>
+	</div>
 	</div>
 	</article>
 	
