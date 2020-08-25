@@ -43,4 +43,4 @@
 </article>
 <footer><%@ include file="/WEB-INF/views/include/footer.jsp" %></footer>
 </body>
-</html> 
+</html>

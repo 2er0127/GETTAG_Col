@@ -13,4 +13,4 @@
 </div>
 <div class="foot-logo-wrap"><img class="foot-logo" src="${pageContext.request.contextPath}/resources/images/team_logo.png"></div>
 <p id="copyright">Copyright 2020 Team GETTAG All right Reserved.</p>
-</div> 
+</div>
