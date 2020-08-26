@@ -17,6 +17,7 @@ public class FrontController {
 	@RequestMapping(value="/gSearch/{gSearchView}", method=RequestMethod.POST) // gSearch에 action값으로 설정해주기!
 	public ModelAndView gSearch(ModelAndView mv, @PathVariable int gSearchView) {
 		
+		// 여기에 검색 버튼을 눌렀을 때? 가 들어가야함 (여기 아니면 위에)
 		mv.setViewName("gSearch/gSearchView");
 		return mv; // POST gSearch   
 	}
