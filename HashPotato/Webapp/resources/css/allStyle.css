@@ -1,14 +1,14 @@
 .bold-line {
-	display: block;
 	width: 100%;
-	border: solid 2px #FFBF00;
+	height:40px;
+	border: solid 0px #FFBF00;
 	background-color: #FFBF00;
-	margin-bottom:10px;
-	padding-top:10px;
-	padding-bottom:10px;
-	text-align:right;
+	margin:0px;
 }
 .bold-line a{
+	position:absolute;
+	top:160px;
+	right:0px;
 	padding-right:40px;
 }
 .bold-line a:link{
@@ -18,7 +18,7 @@
 	color:#804000;
 }
 article {
-	margin-top: 150px;
+
 }
 body {
 	margin: 0px;

@@ -18,28 +18,36 @@
 <nav><%@ include file="/WEB-INF/views/include/navi.jsp" %></nav>
 <article>
 <%@ include file="/WEB-INF/views/include/noticeBox.jsp" %>
+<div class="page-wrap">
 <!-- 추천 탑3 대문짝만하게 나올 부분 -->
-<div class="top3-container">
-	<div class="mySlides">
-		<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/first.png" alt="추천 게임 1위"></div>
-		<img src="#크롤링해온 게임 중 추천 순위 1위">
-	</div>
-	<div class="mySlides">
-		<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/second.png" alt="추천 게임 2위"></div>
-		<img src="#크롤링해온 게임 중 추천 순위 2위">
-	</div>
-	<div class="mySlides">
-		<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/third.png" alt="추천 게임 3위"></div>
-		<img src="#크롤링해온 게임 중 추천 순위 3위">
-	</div>
+<div class="top3-wrap">
+	<div class="top3">
+		<div class="slides">
+			<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/first.png" alt="추천 게임 1위"></div>
+			<a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a>
+		</div>
+		<div class="slides">
+			<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/second.png" alt="추천 게임 2위"></div>
+			<a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a>
+		</div>
+		<div class="slides">
+			<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/third.png" alt="추천 게임 3위"></div>
+			<a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a>
+		</div>
 	
-	<a class="prev" onClick="" ><img src="${pageContext.request.contextPath}/resources/images/next_button.png"></a>
-	<a class="next" onClick="" ><img src="${pageContext.request.contextPath}/resources/images/next_button.png"></a>
+		<a class="prev" onClick="" ><img src="${pageContext.request.contextPath}/resources/images/prev_button.png"></a>
+		<a class="next" onClick="" ><img src="${pageContext.request.contextPath}/resources/images/next_button.png"></a>
+
+		<div class="gcaption-wrap">
+			<p id="gcaption"></p>
+		</div>
+	</div>
 </div>
 
 <!-- 정렬 기준(겹치는 해시 순, 별점 순,  -->
 <hr>
 <!-- 나머지 출력 4*4(탑3도 포함할 것) -->
+</div>
 </article>
 <footer><%@ include file="/WEB-INF/views/include/footer.jsp" %></footer>
 </body>
