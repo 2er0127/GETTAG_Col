@@ -1,6 +1,7 @@
 package com.gettag.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -13,8 +14,8 @@ public class FrontController {
 		mv.setViewName("main/mainView");
 		return mv; // GET mainView
 	}
-	@RequestMapping(value="/gSearch", method=RequestMethod.POST) // gSearch에 action값으로 설정해주기!
-	public ModelAndView gSearch(ModelAndView mv) {
+	@RequestMapping(value="/gSearch/{gSearchView}", method=RequestMethod.POST) // gSearch에 action값으로 설정해주기!
+	public ModelAndView gSearch(ModelAndView mv, @PathVariable int gSearchView) {
 		
 		mv.setViewName("gSearch/gSearchView");
 		return mv; // POST gSearch   
