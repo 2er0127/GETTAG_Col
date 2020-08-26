@@ -1,14 +1,24 @@
 package com.gettag.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
 	
-	@GetMapping("/") // 루트 경로 /에 HTTP GET 요청 수신되면 이 메소드가 해당 요청을 처리.
-	public String main() {
-		return "/WEB-INF/views/main/mainView.jsp"; // view 이름을 반환해야한다. 아직 미완성 
+	@RequestMapping(value="/", method=RequestMethod.GET)
+	public ModelAndView main(ModelAndView mv) {
+		
+		mv.setViewName("main/mainView");
+		return mv;
+	}
+	@RequestMapping(value="/", method=RequestMethod.POST)
+	public ModelAndView main2(ModelAndView mv) {
+		
+		mv.setViewName("main/mainView");
+		return mv;
 	}
 
 }
