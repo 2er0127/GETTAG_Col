@@ -12,7 +12,7 @@ public class LoginController {
 	
 	@RequestMapping("/loginView")
 	public String login() {
-		return "login/loginView"; // WEB-INF/viewss/login/loginView.jsp를 찾는다.
+		return "login/loginView"; // WEB-INF/views/login/loginView.jsp를 찾는다.
 	}
 
 
