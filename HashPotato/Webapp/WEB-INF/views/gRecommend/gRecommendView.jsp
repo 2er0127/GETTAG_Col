@@ -19,7 +19,20 @@
 <article>
 <hr class="bold-line">
 <!-- 추천 탑3 대문짝만하게 나올 부분 -->
-
+<div class="top3-container">
+	<div class="mySlides">
+		<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/first.png" alt="추천 게임 1위"></div>
+		<img src="#크롤링해온 게임 중 추천 순위 1위">
+	</div>
+	<div class="mySlides">
+		<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/second.png" alt="추천 게임 2위"></div>
+		<img src="#크롤링해온 게임 중 추천 순위 2위">
+	</div>
+	<div class="mySlides">
+		<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/third.png" alt="추천 게임 3위"></div>
+		<img src="#크롤링해온 게임 중 추천 순위 3위">
+	</div>
+</div>
 
 <!-- 정렬 기준(겹치는 해시 순, 별점 순,  -->
 <hr>
