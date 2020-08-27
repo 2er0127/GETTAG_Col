@@ -24,4 +24,5 @@ public class MainController {
 }
 
 // 메인 홈페이지 컨트롤러 
+// 로고 -> 자기자신 소
 

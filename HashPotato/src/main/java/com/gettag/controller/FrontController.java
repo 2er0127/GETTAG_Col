@@ -22,6 +22,6 @@ public class FrontController {
 		return mv; // POST gSearch   
 	}
 }
-// whyrano
+
 // mainView -> gSearch
 
