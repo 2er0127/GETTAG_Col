@@ -4,10 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.stereotype.Controller;
-
-@Controller
-public class LoginController {
+public class LoginController implements Controller{
 	public String handleRequest(HttpServletRequest request
 							  , HttpServletResponse response
 							  ) throws Exception {
