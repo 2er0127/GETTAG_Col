@@ -1,0 +1,9 @@
+body{
+	margin: 0;
+}
+.gSelect-wrap{
+	margin: 0 auto;
+	width:450px;
+	background-color: #ffff80;
+	text-align: center;
+}
