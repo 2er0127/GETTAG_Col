@@ -23,7 +23,7 @@
     <%@ include file="/WEB-INF/views/include/noticeBox.jsp" %>
     <div class="page-wrap">
     <div class="sign-box">  
-    <form action="/HashPotato/login.com" method="post">
+    <form action="/HashPotato/loginView.com" method="post">
         <h2>다음 계정으로 로그인</h2>
     </form>
         <div class="sign-button-box">
