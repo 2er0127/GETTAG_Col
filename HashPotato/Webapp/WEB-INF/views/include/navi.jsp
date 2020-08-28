@@ -14,7 +14,7 @@
 	<ul class="nav-li">
 		<c:choose>
 			<c:when test="${empty user}">	<!-- 로그인 전 -->
-				<li class="nav-login"><a href="/WEB-INF/views/login/loginView.jsp">로그인</a></li>
+				<li class="nav-login"><a href="/HashPotato/loginView.com">로그인</a></li>
 			</c:when>
 				
 			<c:otherwise>	<!-- 로그인 후 -->
