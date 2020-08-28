@@ -4,27 +4,23 @@
   
   	
 	<servlet>
-  		<servlet-name>dispatcher</servlet-name>
-  		<servlet-class>com.gettag.service.DispatcherServlet</servlet-class>
+  		<servlet-name>FirstController</servlet-name>
+  		<servlet-class>com.gettag.controller.FirstController</servlet-class>
   		<init-param>
-  			<param-name>controllers</param-name>
+  			<param-name>configName</param-name>
   			<param-value>
-  				
+  			/resources/bean.properties
   			</param-value>
   		</init-param>
   	</servlet>
-  	
-  	<servlet>
-  		<servlet-name>mainView-jsp</servlet-name>
-  		<jsp-file>/mainView.jsp</jsp-file>
-  	</servlet>
+
   	<servlet-mapping>
-  		<servlet-name>mainView-jsp</servlet-name>
-  		<url-pattern>/mainView</url-pattern>
+  		<servlet-name>FirstController</servlet-name>
+  		<url-pattern>*.com</url-pattern>
   	</servlet-mapping>
  
 	<welcome-file-list>
-
+		<!-- 메인페이지  -->
 		<welcome-file>/WEB-INF/views/main/mainView.jsp</welcome-file>
 
 	</welcome-file-list>
