@@ -22,7 +22,7 @@
 			</c:otherwise>
 		</c:choose>
 		
-		<li class="nav-myinfo"><a href="#마이페이지">마이페이지</a></li>
+		<li class="nav-myinfo"><a href="/HashPotato/mypageView.com">마이페이지</a></li>
 		<!-- 현재 세션 영역에 존재하는 user 타입이 'S'(슈퍼유저) 라면 -->
 		<c:if test="${ user.type eq 'S' }"> 
 			<li class="nav-notice-write"><a href="#글쓰기사이트">글쓰기</a></li>
