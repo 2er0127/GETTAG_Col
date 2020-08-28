@@ -6,7 +6,7 @@
 <div class="header">    
 <div class="header-wrap">
 <!-- 해시포테토 로고. 누르면 mainVeiw로 돌아간다. -->
-	<a href="#메인뷰" class="headLogo"><img src="${pageContext.request.contextPath}/resources/images/hashpotato_Logo.png" alt="Hash Potato"></a>
+	<a href="/HashPotato/mainView.com" class="headLogo"><img src="${pageContext.request.contextPath}/resources/images/hashpotato_Logo.png" alt="Hash Potato"></a>
 <!-- 게임 검색창 mainView의 action 주소와 동일-->
 <!-- submit 시, 게임 선택을 위한 창 생성 -->
 <div class="search-wrap">

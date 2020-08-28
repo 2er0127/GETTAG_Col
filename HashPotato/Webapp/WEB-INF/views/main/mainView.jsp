@@ -22,7 +22,7 @@
 
 <article class="main-search-wrap">
 
-	<div class="main-logo"><a href="#메인뷰" class="mainLogo"><img src="${pageContext.request.contextPath}/resources/images/hashpotato_Logo.png" alt="Hash Potato"></a></div>
+	<div class="main-logo"><a href="/HashPotato/mainView.com" class="mainLogo"><img src="${pageContext.request.contextPath}/resources/images/hashpotato_Logo.png" alt="Hash Potato"></a></div>
 
 	<div class="main-box">
 	<p>
