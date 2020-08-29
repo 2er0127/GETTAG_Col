@@ -14,5 +14,23 @@
 	
 	<context:annotation-config/>
 	<context:component-scan base-package="com.gettag" />	
+	<bean id="googleOAuth2Template"
+			class="org.springframework.social.google.connect.GoogleOAuth2Template">
+			<constructor-arg
+				value="Your Client Id" />
+			<constructor-arg value="Your Client Secret" />
+			</bean>
+	<bean id="googleOAuth2Parameters"
+		class="org.springframework.social.ouath2.OAuth2Parameters">
+		<property name="scope"
+			value="profile"></property>
+			<property name="redirectUri"
+				value="http://localhost:8080/google/googleSignInCallback" />
+		</bean>
+	<bean id="authInfo" class="com.gettag.vo.AuthInfo">
+		<constructor-arg
+			value="Your Client Id" />
+		<constructor-arg value="Your Client Secret" />
+	</bean>
 </beans>
  

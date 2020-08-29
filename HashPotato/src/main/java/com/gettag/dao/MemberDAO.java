@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 import com.gettag.util.ConnectionPool;
-import com.gettag.vo.MemberVO;
+import com.gettag.vo.AuthInfo;
 
 /*
 [Table 생성] - 게시판, 파일
@@ -21,9 +21,9 @@ CREATE TABLE member(
 public class MemberDAO {
 		Connection conn = null;
 	
-	private MemberVO member = new MemberVO();
+	private AuthInfo member = new AuthInfo();
 	
-	public void insert(MemberVO member) {
+	public void insert(AuthInfo member) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		try {
