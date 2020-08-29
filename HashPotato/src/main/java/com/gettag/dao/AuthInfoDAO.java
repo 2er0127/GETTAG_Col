@@ -18,7 +18,7 @@ CREATE TABLE member(
 );
 */
 
-public class MemberDAO {
+public class AuthInfoDAO {
 		Connection conn = null;
 	
 	private AuthInfo member = new AuthInfo();
@@ -29,16 +29,14 @@ public class MemberDAO {
 		try {
 			con = ConnectionPool.getConnection();
 			StringBuilder sql = new StringBuilder();
-			sql.append(" INSERT INTO member (userId, name, email, imgUrl, type ) ");
-			sql.append(" VALUES (?, ?, ?, ?, ?) ");
+			sql.append(" INSERT INTO member (clientId, clientSecret ) ");
+			sql.append(" VALUES (?, ?) ");
 			
 			pstmt = con.prepareStatement(sql.toString());
 			int index = 1;
-			pstmt.setString(index++, member.getUserId());
-			pstmt.setString(index++, member.getName());
-			pstmt.setString(index++, member.getEmail());
-			pstmt.setString(index++, member.getImgUrl());
-			pstmt.setString(index++, member.getType());
+			pstmt.setString(index++, member.getClientId());
+			pstmt.setString(index++, member.getClientSecret());
+			
 			
 			pstmt.executeUpdate();
 		} catch (Exception e) {
@@ -48,6 +46,6 @@ public class MemberDAO {
 			catch(Exception e) { e.printStackTrace();}
 			ConnectionPool.close(con);
 		}
-	}
+	}  
 }
  
