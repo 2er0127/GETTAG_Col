@@ -28,10 +28,11 @@
 	<p>
 	재미있게 즐겼던 게임과 유사한 게임을 찾고 싶으신가요?<br>
 	게임 제목을 입력하시면 #POTATO가 태그를 분석해서 비슷한 게임을 추천해드립니다!
+	[주의] 제목을 정확하게 입력해주세요!
 	</p>
 	
 	<!-- submit 시, 게임 선택을 위한 창 생성 -->
-	<form class="game-search" name="game-search" action="http://localhost:8080/HashPotato/" method="get">
+	<form class="game-search" name="game-search" action="http://localhost:8080/HashPotato/main.com" method="get">
 		<input id="main-search" type="search" name="search-box" placeholder="게임 제목을 입력하세요!"><br>
 		<input id="main-submit" type="submit" value="검색" onClick="open_select()">
 	</form>

@@ -23,7 +23,7 @@
 		
 	</div>
 </c:forEach> --%>
-<input type="submit" name="gSelectSubmit" value="확인">
+<a href="/HashPotato/gRecommendView.com">확인</a>
 </form>
 </div>
 </div>
