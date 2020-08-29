@@ -11,3 +11,4 @@ return "/WEB-INF/views/notice/noticeView.jsp";
 }
 
 }
+// 공지사항 연결 컨트롤러   
