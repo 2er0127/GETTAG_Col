@@ -7,12 +7,12 @@
 	<span class="bold-info">Team GETTAG</span>
 	<div class="info">
 	삼육대학교 컴공 2학년 세 명이 으쌰으쌰 맨땅에 헤딩<br/>
-	이메일&nbsp;| #TO WRITE<br>
+	이메일&nbsp;| 1009suna@gmail.com<br>
 	Github&nbsp;| https://github.com/princesssuna/GETTAG_Col
 	</div>
 </div><br>
 <div>Icons made by <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 <div class="foot-logo-wrap"><img class="foot-logo" src="${pageContext.request.contextPath}/resources/images/team_logo.png"></div>
-<p id="copyright">Copyright 2020 Team GETTAG All right Reserved.</p>
+<p id="copyright">Copyright © 2020 Team GETTAG All right Reserved.</p>
 
 </div>
