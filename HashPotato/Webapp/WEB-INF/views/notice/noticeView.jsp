@@ -11,6 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/headerStyle.css">
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/naviStyle.css">
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/footerStyle.css">
+
+	<script type="text/javascript">
+		function goToWrite() {
+			location.href='#noticeWriteView';
+		}
+	</script>
 </head>
 <body>
 	<header><%@ include file="/WEB-INF/views/include/header.jsp" %></header>
@@ -45,11 +51,11 @@
 			</tbody>
 		</table>
 		<br>
-<%-- 	<div class="superWrite-wrap">
+	<div class="superWrite-wrap">
 			<c:if test="${ user.type eq 'S' }">
-				<input type="button" value="관리자 글쓰기" onclick="함수명()" class="superWrite_wrap"/>
+				<input type="button" value="관리자 글쓰기" onclick="goToWrite()" class="superWrite_wrap"/>
 			</c:if>
-		</div> --%>
+		</div>
 	</div>
 	</div>
 	</article>

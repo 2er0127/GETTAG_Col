@@ -21,7 +21,7 @@
  
 	<welcome-file-list>
 		<!-- 메인페이지  -->
-		<welcome-file>/WEB-INF/views/include/searchWindow.jsp</welcome-file>
+		<welcome-file>/WEB-INF/views/notice/noticeView.jsp</welcome-file>
 
 	</welcome-file-list>
 </web-app>
