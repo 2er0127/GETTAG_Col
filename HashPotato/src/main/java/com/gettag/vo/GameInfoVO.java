@@ -31,5 +31,4 @@ public class GameInfoVO {
 		this.gAppid = gAppid;
 	}
 	
-	
 }
