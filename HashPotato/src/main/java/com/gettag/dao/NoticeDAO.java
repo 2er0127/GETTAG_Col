@@ -11,6 +11,7 @@ import com.gettag.vo.NoticeVO;
 
 
 
+
 /*
    CREATE TABLE notice (
 		no 			INT 			AUTO_INCREMENT,
@@ -95,6 +96,56 @@ public class NoticeDAO {
 			ConnectionPool.close(con);
 		}
 		return list;
+	}
+	public int selectNo() {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int no = 0;
+		
+		try {
+			con = ConnectionPool.getConnection();
+			StringBuilder sql = new StringBuilder();
+			sql.append(" SELECT max(no) + 1 ");
+			sql.append("   FROM board ");
+			
+			pstmt = con.prepareStatement(sql.toString());
+			
+			ResultSet rs = pstmt.executeQuery();
+			
+			rs.next();
+			no = rs.getInt(1);
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try { if(pstmt != null) pstmt.close(); }
+			catch(Exception e) { e.printStackTrace(); }
+			ConnectionPool.close(con);
+		}
+		return no;
+	}
+	
+	
+	public void updateViewCnt(int no) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			con = ConnectionPool.getConnection();
+			StringBuilder sql = new StringBuilder();
+			sql.append(" UPDATE board ");
+			sql.append("    SET view_cnt = view_cnt + 1 ");
+			sql.append("  WHERE no = ? ");
+			
+			pstmt = con.prepareStatement(sql.toString());
+			pstmt.setInt(1, no);
+			pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try { if(pstmt != null) pstmt.close(); }
+			catch(Exception e) { e.printStackTrace(); }
+			ConnectionPool.close(con);
+		}
 	}
 
 }
