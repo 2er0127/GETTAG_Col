@@ -16,9 +16,7 @@ import com.gettag.service.HandlerMapping;
 public class FirstController extends HttpServlet{
 
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	private HandlerMapping mappings = null;
 	
