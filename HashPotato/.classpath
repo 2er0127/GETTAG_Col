@@ -35,5 +35,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/jep-master/jep-master/build/java/jep-3.9.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
