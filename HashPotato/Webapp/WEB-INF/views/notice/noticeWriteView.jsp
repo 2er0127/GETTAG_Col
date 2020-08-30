@@ -18,7 +18,7 @@
 		}
 		function writeOk(){
 			alert('공지사항 게시글 등록이 완료되었습니다.');
-			location.href='#noticeView';
+			goTolist();
 		}
 	</script>
 </head>
@@ -30,7 +30,8 @@
 <%@ include file="/WEB-INF/views/include/noticeBox.jsp" %>
 
 <form>
-
+<input type="text" name="noticeTitle" placeholder="제목을 입력하세요.">
+<textarea name="noticeContent" cols="50" rows="30" placeholder="내용을 입력하세요."></textarea>
 <input type="button" onClick="goTolist()" value="글목록">
 <input type="submit" onClick="writeOk()" value="등록">
 </form>
