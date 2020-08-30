@@ -34,18 +34,21 @@ public class GameInfoDAO {
 				+ "\n" + "\t" + "print('title_list : ' + str(len(thumbnail_list)))"
 				+ "\n" + "\t" + "appid_list = soup.select('.search_result_row')"
 				+ "\n" + "\t" + "print('appid_list : ' + str(len(title_list)))"		// 게임 고유 번호
+				+ "\n" + "\t" + "title = []"
+				+ "\n" + "\t" + "release = []"
+				+ "\n" + "\t" + "thumbnail = []"
+				
+				// 입력받은 게임제목이 포함된 결과만 title[]에 저장 
+				+ "\n" + "\t" + "for i in range(len(title_list)):"
+				+ "\n" + "\t" + "\t" + "if(cleanText(userS.lower()) in cleanText(title_list[i].text.lower())):"
+				+ "\n" + "\t" + "\t" + "\t" + "title.append(title_list[i].text)"
+				+ "\n" + "\t" + "print(title)"
 				);
-		jep.eval("gtitle = cleanText('Don,t Starve')");
-		jep.eval("print(searchGame(gtitle))");
 		
-		
+//		jep.eval("gtitle = cleanText('Don,t Starve')");
+//		jep.eval("print(searchGame(gtitle))");
 		
 	}
 }
-
-
-
-
-
 
 
