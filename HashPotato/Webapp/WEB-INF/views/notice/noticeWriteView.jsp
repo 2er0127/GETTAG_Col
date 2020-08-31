@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>공지사항 글쓰기 | #POTATO</title>
 
-	<%-- <link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/loginStyle.css"> --%>
+	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/noticeWriteStyle.css">
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/allStyle.css">
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/headerStyle.css">
 	<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/resources/css/naviStyle.css">    
@@ -29,11 +29,11 @@
 <article>
 <%@ include file="/WEB-INF/views/include/noticeBox.jsp" %>
 
-<form>
-<input type="text" name="noticeTitle" placeholder="제목을 입력하세요.">
-<textarea name="noticeContent" cols="50" rows="30" placeholder="내용을 입력하세요."></textarea>
-<input type="button" onClick="goTolist()" value="글목록">
-<input type="submit" onClick="writeOk()" value="등록">
+<form class="write-form">
+<input type="text" id="noticeTitle" name="noticeTitle" placeholder="제목을 입력하세요."><br>
+<textarea id="noticeContent" name="noticeContent" cols="80" rows="20" placeholder="내용을 입력하세요."></textarea><br>
+<input type="button" onClick="goTolist()" value="글 목록">
+<input type="submit" onClick="writeOk()" value="글 등록">
 </form>
 </article>
 <footer><%@ include file="/WEB-INF/views/include/footer.jsp" %></footer>
