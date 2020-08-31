@@ -27,14 +27,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.gettag.vo.AuthInfo;
+import com.gettag.vo.AuthInfoVO;
 
 @Controller
 public class LoginGoogleController {
 	private static final Logger logger = LoggerFactory.getLogger(LoginGoogleController.class);
 	 
     @Inject
-    private AuthInfo authInfo;
+    private AuthInfoVO authInfo;
     
     @Autowired
     private GoogleOAuth2Template googleOAuth2Template;

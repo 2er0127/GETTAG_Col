@@ -51,24 +51,25 @@ public class GameInfoDAO {
 				+ "\n" + "\t" + "thumbnail = []"
 				+ "\n" + "\t" + "appid = []"
 				
-				// 입력받은 게임제목이 포함된 결과만 저장 
+				// 입력받은 게임제목이 포함된 결과만 각 리스트에 저장 
 				+ "\n" + "\t" + "for i in range(len(title_list)):"
 				+ "\n" + "\t" + "\t" + "if(cleanText(userS.lower()) in cleanText(title_list[i].text.lower())):"
 				+ "\n" + "\t" + "\t" + "\t" + "title.append(title_list[i].text)"
 				+ "\n" + "\t" + "\t" + "\t" + "release.append(release_list[i].text)"
 				+ "\n" + "\t" + "\t" + "\t" + "thumbnail.append(thumbnail_list[i])"
 				+ "\n" + "\t" + "\t" + "\t" + "appid.append(appid_list[i])"
-				+ "\n" + "\t" + "print(title)"
-				+ "\n" + "\t" + "print(release)"
-				+ "\n" + "\t" + "print(thumbnail)"
-				+ "\n" + "\t" + "print(appid)"
 				);
 		
+		jep.eval("def detailGameInfo(appid):"
+				+ "\n" + "\t" + "url = 'https://store.steampowered.com/app/'+ appid"
+				+ "\n" + "\t" + "response = requests.get(url)"
+				+ "\n" + "\t" + "html = response.text"
+				+ "\n" + "\t" + "soup = BeautifulSoup(html, 'html.parser')"
+		);
 		
-//		jep.eval("gtitle = cleanText('Don,t Starve')");
-//		jep.eval("print(searchGame(gtitle))");
+		
+		
 		
 	}
 }
-
 
