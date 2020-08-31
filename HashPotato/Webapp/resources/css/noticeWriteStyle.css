@@ -1,0 +1,14 @@
+.write-form{
+	text-align:center;
+	margin-top: 50px;
+}
+
+#noticeTitle{
+	width:600px;
+}
+
+#noticeContent{
+	width:600px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
