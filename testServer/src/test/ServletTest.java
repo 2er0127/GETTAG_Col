@@ -29,7 +29,7 @@ public class ServletTest extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=euc-kr");
         PrintWriter out=response.getWriter();
-        out.println("<html>"+"<body>"+"<h1>서블릿 간단 작성 예제입니다. </h1> "+"</body>"+"</html>");
+        out.println("<html>"+"<body>"+"<h1>서블릿 예제입니다.</h1> "+"</body>"+"</html>");
 	}
 
 	/**
