@@ -9,6 +9,6 @@ public class SearchController implements Controller {
 			  ) throws Exception {
 return "/WEB-INF/views/include/searchWindow.jsp";
 }
-
+// 메인에서 검색 후 나오는 화면   
 
 }

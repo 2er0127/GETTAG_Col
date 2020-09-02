@@ -9,5 +9,5 @@ public class RecommendController {
 			  ) throws Exception {
 return "/WEB-INF/views/gRecommend/gRecommendView.jsp";
 }
-
+// 게임 추천화면   
 }
