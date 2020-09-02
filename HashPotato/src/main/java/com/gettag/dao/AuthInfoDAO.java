@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 import com.gettag.util.ConnectionPool;
-import com.gettag.vo.AuthInfo;
+import com.gettag.vo.AuthInfoVO;
 
 /*
 [Table 생성] - 게시판, 파일
@@ -21,16 +21,16 @@ CREATE TABLE member(
 public class AuthInfoDAO {
 		Connection conn = null;
 	
-	private AuthInfo member = new AuthInfo();
+	private AuthInfoVO member = new AuthInfoVO();
 	
-	public void insert(AuthInfo member) {
+	public void insert(AuthInfoVO member) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		try {
 			con = ConnectionPool.getConnection();
 			StringBuilder sql = new StringBuilder();
-			sql.append(" INSERT INTO member (clientId, clientSecret ) ");
-			sql.append(" VALUES (?, ?) ");
+			sql.append(" INSERT INTO authinfo (clientId, clientSecret, type ) ");
+			sql.append(" VALUES (?, ?, 'U') "); // type S:관리자, U:일반유저
 			
 			pstmt = con.prepareStatement(sql.toString());
 			int index = 1;
