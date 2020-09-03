@@ -17,8 +17,8 @@
 	<bean id="googleOAuth2Template"
 			class="org.springframework.social.google.connect.GoogleOAuth2Template">
 			<constructor-arg
-				value="Your Client Id" />
-			<constructor-arg value="Your Client Secret" />
+				value="46039581913-flus44ena0f5ofrtpa81tnao4vsr5tbr.apps.googleusercontent.com" />
+			<constructor-arg value="xRDny934C6ncTihrU8vkAQwJ" />
 			</bean>
 	<bean id="googleOAuth2Parameters"
 		class="org.springframework.social.ouath2.OAuth2Parameters">
