@@ -14,14 +14,24 @@
 	float:left;
 	margin-left:30px;
 	margin-top:50px;
+	overflow:hidden;
+	display:flax;
+	align-items: center;
+	justify-content: center;
 }
 .ranking{
 	position: absolute;
 }
+.top3Img{
+	
+}
 .slides a img{
-	height:100%;
+	width:300px;
 }
 .ranking img {
+	position: absolute;
+	top: -30px;
+	left: -40px;
 	width:100px;
 }
 

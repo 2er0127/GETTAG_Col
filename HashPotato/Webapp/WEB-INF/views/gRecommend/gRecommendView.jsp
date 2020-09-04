@@ -24,19 +24,16 @@
 	<div class="top3">
 		<div class="slides">
 			<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/first.png" alt="추천 게임 1위"></div>
-			<a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a>
+			<div class="top3Img"><a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a></div>
 		</div>
 		<div class="slides">
 			<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/second.png" alt="추천 게임 2위"></div>
-			<a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a>
+			<div class="top3Img"><a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a></div>
 		</div>
 		<div class="slides">
 			<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/third.png" alt="추천 게임 3위"></div>
-			<a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a>
+			<div class="top3Img"><a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a></div>
 		</div>
-	
-		<a class="prev" onClick="" ><img src="${pageContext.request.contextPath}/resources/images/prev_button.png"></a>
-		<a class="next" onClick="" ><img src="${pageContext.request.contextPath}/resources/images/next_button.png"></a>
 
 		<div class="gcaption-wrap">
 			<p id="gcaption"></p>
