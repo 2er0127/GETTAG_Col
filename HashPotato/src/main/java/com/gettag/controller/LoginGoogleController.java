@@ -51,7 +51,7 @@ public class LoginGoogleController {
         System.out.println("/googleLogin, url : " + url);
         model.addAttribute("google_url", url);
  
-        return "/main/mainView";
+        return "/mypage/mypageView";
     }
  
     @RequestMapping(value = "/googleSignInCallback")
@@ -66,7 +66,7 @@ public class LoginGoogleController {
         parameters.add("code", code);
         parameters.add("client_id", authInfo.getClientId());
         parameters.add("client_secret", authInfo.getClientSecret());
-        parameters.add("redirect_uri", googleOAuth2Parameters.getRedirectUri());
+//        parameters.add("redirect_uri", googleOAuth2Parameters.getRedirectUri());
         parameters.add("grant_type", "authorization_code");
  
         HttpHeaders headers = new HttpHeaders();
