@@ -25,14 +25,17 @@
 		<div class="slides">
 			<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/first.png" alt="추천 게임 1위"></div>
 			<div class="top3Img"><a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a></div>
+			<div class="top3GName"><p>#게임이름</p></div>
 		</div>
 		<div class="slides">
 			<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/second.png" alt="추천 게임 2위"></div>
 			<div class="top3Img"><a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a></div>
+			<div class="top3GName"><p>#게임이름</p></div>
 		</div>
 		<div class="slides">
 			<div class="ranking"><img src="${pageContext.request.contextPath}/resources/images/third.png" alt="추천 게임 3위"></div>
 			<div class="top3Img"><a href=""><img src="${pageContext.request.contextPath}/resources/images/first.png"></a></div>
+			<div class="top3GName"><p>#게임이름</p></div>
 		</div>
 
 		<div class="gcaption-wrap">

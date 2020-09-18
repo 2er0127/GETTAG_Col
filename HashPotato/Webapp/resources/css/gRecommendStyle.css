@@ -19,11 +19,31 @@
 	align-items: center;
 	justify-content: center;
 }
+.slides:hover{
+	border: 8px solid #FFBF00;
+	
+}
+.top3Img img:hover{
+	opacity:50%;
+}
 .ranking{
 	position: absolute;
 }
 .top3Img{
+	z-index:1;
+}
+.top3GName{
+	position: absolute;
+	top:0;
+	width: 300px;
+	height: 200px;
+	z-index: 3;
 	
+}
+.top3GName p{
+	color: #FFFFFF;
+	text-align:center;
+	padding-top: 100px;
 }
 .slides a img{
 	width:300px;
@@ -33,11 +53,4 @@
 	top: -30px;
 	left: -40px;
 	width:100px;
-}
-
-.prev img{
-	width:50px;
-}
-.next img{
-	width:50px;
 }
