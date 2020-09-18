@@ -21,7 +21,9 @@ public class GameInfoDAO {
 				+ "\t" + "return text");
 
 		
-		// 게임 검색 결과
+		
+		
+		// 게임 검색 결과 메소드
 		jep.eval("def searchGame(userS):"
 				+ "\n" + "\t" + "url = 'https://store.steampowered.com/search/?term='+ userS"
 				+ "\n" + "\t" + "response = requests.get(url)"
@@ -61,13 +63,36 @@ public class GameInfoDAO {
 				+ "\n" + "\t" + "\t" + "\t" + "appid.append(appid_list[i])"
 				);
 		
-		jep.eval("def detailGameInfo(appid):"
-				+ "\n" + "\t" + "url = 'https://store.steampowered.com/app/'+ appid"
+		
+		
+		
+		
+	
+		// 특정 게임 정보 메소드
+		jep.eval("def detailGameInfo(app_id):"
+				+ "\n" + "\t" + "url = 'https://store.steampowered.com/app/'+app_id"
 				+ "\n" + "\t" + "response = requests.get(url)"
 				+ "\n" + "\t" + "html = response.text"
 				+ "\n" + "\t" + "soup = BeautifulSoup(html, 'html.parser')"
-		);
-		
+				
+				// GAME TITLE
+				+ "\n" + "\t" + "gTitle = soup.select_one('.apphub_AppName').text"
+				+ "\n" + "\t" + "print(gTitle)"
+				
+				// RELEASE DATE
+				+ "\n" + "\t" + "gDate = soup.select_one('.date').text"
+				+ "\n" + "\t" + "print(gDate)"
+				
+				// GAME TAG
+				+ "\n" + "\t" + "gTags = soup.select('.app_tag')"
+				// gTags 안에 배열형식으로 태그 저장
+			/*	+ "\n" + "\t" + "for i in range(0,len(gTags)):"
+				+ "\n" + "\t" + "\t" + "print(gTags[i].text)"	*/	//gTags에 저장된 함수 출력하는 코드
+				
+				
+				// THUMBNAIL
+				+ "\n" + "\t" + "gImage = soup.find(\"img\",{\"class\":\"game_header_image_full\"}).get('src')"
+				);
 		
 		
 
