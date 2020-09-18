@@ -41,6 +41,14 @@
         //onSignIn 함수는 데이터 받는것 확인을 위해 넣어둔 것일 뿐 이거 콘솔에 보이면 안됨!!
     		function onSignIn(googleUser) { 
     			var profile = googleUser.getBasicProfile();
+    			
+    			
+    			userIdd = profile.getId();
+    			userFullnamee = profile.getName();
+    			userImage = profile.getImageUrl();
+    			userEmail = profile.getEmail();
+    			
+    			
     		    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
     		    console.log('Full Name: ' + profile.getName());
    		        console.log("Image URL: " + profile.getImageUrl());

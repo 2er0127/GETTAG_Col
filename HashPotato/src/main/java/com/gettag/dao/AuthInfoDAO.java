@@ -16,6 +16,7 @@ CREATE TABLE member(
  type		VARCHAR(1) 		NOT NULL,
  PRIMARY KEY (userId)
 );
+
 */
 
 public class AuthInfoDAO {
@@ -36,6 +37,7 @@ public class AuthInfoDAO {
 			int index = 1;
 			pstmt.setString(index++, member.getClientId());
 			pstmt.setString(index++, member.getClientSecret());
+		
 			
 			
 			pstmt.executeUpdate();
