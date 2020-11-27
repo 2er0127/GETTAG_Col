@@ -3,7 +3,7 @@
 
 HashPotato 폴더 입니다. (8/1 ~ 8/31)
 
-9/1 ~ 완성까지 매주 금요일 프로젝트 진행
+20.12.28 남은 프로젝트 시작
 
  
 Leader : 이선아 (Controller JAVA, Server)
