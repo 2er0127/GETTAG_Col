@@ -51,7 +51,7 @@ public class LoginGoogleController {
         System.out.println("/googleLogin, url : " + url);
         model.addAttribute("google_url", url);
  
-        return "/mypage/mypageView";
+        return "/main/mainView";
     }
  
     @RequestMapping(value = "/googleSignInCallback")

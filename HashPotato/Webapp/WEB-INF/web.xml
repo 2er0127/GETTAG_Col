@@ -21,7 +21,9 @@
  
 	<welcome-file-list>
 		<!-- 메인페이지  -->
-		<welcome-file>/WEB-INF/views/gRecommend/gRecommendView.jsp</welcome-file>
+		<welcome-file>/WEB-INF/views/main/mainView.jsp</welcome-file>
+		<welcome-file>/WEB-INF/views/login/loginView.jsp</welcome-file>
+		<welcome-file>/WEB-INF/views/mypage/mypageView.jsp</welcome-file>
 
 	</welcome-file-list>
 </web-app>
